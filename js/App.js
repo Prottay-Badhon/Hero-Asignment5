@@ -1,18 +1,18 @@
 // Error message ..................................
-// function showError() {
-//     document.getElementById("error-msg").style.display = "block";
-//     return 0;
-// }
+function showError() {
+    document.getElementById("error-msg").style.display = "block";
+    return 0;
+}
 
-// function showEmptyError() {
-//     document.getElementById("empty-error").style.display = "block";
-//     return 0;
-// }
+function showEmptyError() {
+    document.getElementById("empty-error").style.display = "block";
+    return 0;
+}
 
-// function showEmptyIncome() {
-//     document.getElementById("empty-income").style.display = "block";
-//     return 0
-// }
+function showEmptyIncome() {
+    document.getElementById("empty-income").style.display = "block";
+    return 0
+}
 
 
 
