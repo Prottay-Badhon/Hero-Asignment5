@@ -1,46 +1,46 @@
 // Error message ..................................
-function showError() {
-    document.getElementById("error-msg").style.display = "block";
-    return 0;
-}
+// function showError() {
+//     document.getElementById("error-msg").style.display = "block";
+//     return 0;
+// }
 
-function showEmptyError() {
-    document.getElementById("empty-error").style.display = "block";
-    return 0;
-}
+// function showEmptyError() {
+//     document.getElementById("empty-error").style.display = "block";
+//     return 0;
+// }
 
-function showEmptyIncome() {
-    document.getElementById("empty-income").style.display = "block";
-    return 0
-}
+// function showEmptyIncome() {
+//     document.getElementById("empty-income").style.display = "block";
+//     return 0
+// }
 
 
 
 // Cost calulation ..................................
-function getCost() {
-    const foodCost = document.getElementById("food-input").value;
-    const rentCost = document.getElementById("rent-input").value;
-    const clothsCost = document.getElementById("cloth-input").value;
-    if (isNaN(foodCost) || isNaN(rentCost) || isNaN(clothsCost)) {
-        showError();
-    }
-    else if (foodCost == "" || rentCost == "" || clothsCost == "") {
-        showEmptyError();
-    }
-    else {
-        if (foodCost > 0 && rentCost > 0 && clothsCost > 0) {
-            const totalCost = parseInt(foodCost) + parseInt(rentCost) + parseInt(clothsCost);
-            document.getElementById("error-msg").style.display = "none";
-            document.getElementById("empty-error").style.display = "none";
-            document.getElementById("negative-error").style.display = "none";
-            return totalCost;
-        }
-        else {
-            document.getElementById("negative-error").style.display = "block";
-            return 0;
-        }
-    }
-}
+// function getCost() {
+//     const foodCost = document.getElementById("food-input").value;
+//     const rentCost = document.getElementById("rent-input").value;
+//     const clothsCost = document.getElementById("cloth-input").value;
+//     if (isNaN(foodCost) || isNaN(rentCost) || isNaN(clothsCost)) {
+//         showError();
+//     }
+//     else if (foodCost == "" || rentCost == "" || clothsCost == "") {
+//         showEmptyError();
+//     }
+//     else {
+//         if (foodCost > 0 && rentCost > 0 && clothsCost > 0) {
+//             const totalCost = parseInt(foodCost) + parseInt(rentCost) + parseInt(clothsCost);
+//             document.getElementById("error-msg").style.display = "none";
+//             document.getElementById("empty-error").style.display = "none";
+//             document.getElementById("negative-error").style.display = "none";
+//             return totalCost;
+//         }
+//         else {
+//             document.getElementById("negative-error").style.display = "block";
+//             return 0;
+//         }
+//     }
+// }
 
 
 
