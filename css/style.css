@@ -56,7 +56,6 @@ input{
     display: none;
     text-align: center;
 }
-/* responsive..................... */
 @media (max-width: 768px) {
     .my-container{
         margin: 0px;
@@ -74,4 +73,4 @@ input{
         justify-content: center;
     }
    
-}
+} 
