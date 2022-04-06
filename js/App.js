@@ -45,31 +45,31 @@ function getCost() {
 
 
 // Balance calulation ..................................................
-// function getBalance() {
-//     const totalCost = getCost();
-//     const income = document.getElementById("income").value;
-//     if (income == "") {
-//         showEmptyIncome();
-//     }
-//     else if (isNaN(income) || income < 0) {
-//         showError();
-//     }
-//     else if (totalCost > income) {
-//         document.getElementById("income-error").style.display = "block";
-//         document.getElementById("empty-income").style.display = "none";
-//         return 0;
-//     }
-//     else {
-//         const newBalance = parseInt(income) - totalCost;
-//         document.getElementById("income-error").style.display = "none";
-//         document.getElementById("empty-income").style.display = "none";
-//         if (isNaN(newBalance)) {
-//             return 0
-//         }
-//         else
-//             return newBalance;
-//     }
-// }
+function getBalance() {
+    const totalCost = getCost();
+    const income = document.getElementById("income").value;
+    if (income == "") {
+        showEmptyIncome();
+    }
+    else if (isNaN(income) || income < 0) {
+        showError();
+    }
+    else if (totalCost > income) {
+        document.getElementById("income-error").style.display = "block";
+        document.getElementById("empty-income").style.display = "none";
+        return 0;
+    }
+    else {
+        const newBalance = parseInt(income) - totalCost;
+        document.getElementById("income-error").style.display = "none";
+        document.getElementById("empty-income").style.display = "none";
+        if (isNaN(newBalance)) {
+            return 0
+        }
+        else
+            return newBalance;
+    }
+}
 
 
 
